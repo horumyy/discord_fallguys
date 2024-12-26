@@ -16,14 +16,16 @@ ${stage === "lobby" ? "bg-black/40" : "bg-transparent"} transition-colors durati
           {timer}
         </h2>
       )}
-      <img src="images/logo.png" className="absolute top-4 left-4 w-28" />
+      <div className=" absolute w-52 left-2 top-2">
+        <img src="images/horumy_ugo_logo.gif" className="" />
+      </div>
 
       {stage === "lobby" && (
         <>
           {host ? (
             <button
               onClick={startGame}
-              className="pointer-events-auto bg-gradient-to-br from-orange-500 to-yellow-500 hover:opacity-80 transition-all duration-200 px-12 py-4 rounded-lg font-black text-xl text-white drop-shadow-lg"
+              className="pointer-events-auto bg-gradient-to-br from-blue-500 to-purple-500 hover:opacity-80 transition-all duration-200 px-12 py-4 rounded-lg font-black text-xl text-white drop-shadow-lg"
             >
               START
             </button>

@@ -7,7 +7,7 @@ export const Experience = () => {
   return (
     <>
       <OrbitControls />
-      <Environment files={"hdrs/medieval_cafe_1k.hdr"} />
+      <Environment preset="sunset" />
       <Character />
       <GameArena />
     </>
